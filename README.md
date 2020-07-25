@@ -12,11 +12,21 @@ In the game, the server generates a random number between 1 to 99 for each conne
 <br>
 
 ## :computer: How to run the application
-This application can run on any Unix system in terminal mode. To run the client-server application: <br>
-**Compile the files**
+This application can run on any Unix system in terminal mode. To run the client-server application:
+
+**Download Unix Network Programming Library**
+Download the `unpv13e` folder and run configuration as follows:
 ```
-$ make server
-$ make client
+./configure
+cd lib
+make
+cd ../libfree
+make
+```
+**Compile the files**
+Download the `project` folder and run
+```
+$ make
 ```
 **Run the server program**
 ```
@@ -39,6 +49,8 @@ The server can play the game with multiple clients simultaneously. To communicat
 
 `select()` is used to handle the listening socket, connected clients and the standard input.
 
+<br>
+
 ### :arrow_down_small: Basic interactions between the server and client
 
  - After the server sends the game instructions, the client can start or
@@ -55,7 +67,8 @@ The server can play the game with multiple clients simultaneously. To communicat
    score. If it is the first winning game of the client or if the client
    beats its own high score, the server updates the high score that is stored in `past_game_record.txt` file.
    -  During the game, the client can quit and leave the game voluntarily.   
-   
+  
+<br>
 
 ###  :arrow_down_small: Other features
 **Keep-Alive Mechanism** <br>
