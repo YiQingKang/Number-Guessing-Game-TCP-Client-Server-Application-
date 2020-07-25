@@ -385,7 +385,7 @@ int main(int argc, char **argv)
                                 {
                                     sockfd = activeRecords[j].sockfd;
 
-									//all clients with bestAttemptsNo higher (scored more poorly) than the score of the current winner 
+				    //all clients with bestAttemptsNo higher (scored more poorly) than the score of the current winner 
                                     //will receive the broadcast message
                                     if ((sockfd >= 0) && (sockfd != activeRecords[i].sockfd) && (activeRecords[i].attemptsNo < activeRecords[j].bestAttemptsNo))
                                     {
