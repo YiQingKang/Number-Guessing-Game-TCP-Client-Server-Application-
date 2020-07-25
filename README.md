@@ -15,6 +15,7 @@ In the game, the server generates a random number between 1 to 99 for each conne
 This application can run on any Unix system in terminal mode. To run the client-server application:
 
 **Download Unix Network Programming Library**
+
 Download the `unpv13e` folder and run configuration as follows:
 ```
 ./configure
@@ -24,6 +25,7 @@ cd ../libfree
 make
 ```
 **Compile the files**
+
 Download the `project` folder and run
 ```
 $ make
